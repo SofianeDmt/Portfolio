@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
 import Navbar_Project from "../components/navbar/Navbar";
 import Clients from "@/components/clients/Clients";
 import About from "../components/about/About";
@@ -8,20 +8,20 @@ import Skills from "../components/skills/Skills";
 import Title from "../components/about/Title";
 import Footer_section from "../components/footer/Footer";
 import Interest from "@/components/about/Interest";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-    const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
-    function scrollToTop(){
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            setScroll(window.scrollY > 500);
-        });
-    }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 500);
+    });
+  }, []);
   return (
     <div>
       <Head>
@@ -30,37 +30,44 @@ export default function Home() {
       </Head>
 
       <main>
-          <Navbar_Project />
-          <Title />
-          <Interest />
-          <section className="my-28">
+        <Navbar_Project />
+        <Title />
+        <Interest />
+        <section className="my-28">
           <About />
-          </section>
-          <section className="my-28">
+        </section>
+        <section className="my-28">
           <Skills />
-          </section>
-          <section className="my-20">
+        </section>
+        <section className="my-20">
           <Clients />
-          </section>
-          <section className="mt-28">
+        </section>
+        <section className="mt-28">
           <Contact />
-          </section>
+        </section>
       </main>
 
       <footer>
-          <Footer_section />
+        <Footer_section />
       </footer>
-        {scroll ?
-            <button onClick={() => scrollToTop()} className={styles.returnUP}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                     stroke="currentColor" className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10">
-                    <path strokeLinecap="round" strokeLinejoin="round"
-                          d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"/>
-                </svg>
-            </button>
-            :
-            null
-        }
+      {scroll ? (
+        <button onClick={() => scrollToTop()} className={styles.returnUP}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+            />
+          </svg>
+        </button>
+      ) : null}
     </div>
-  )
+  );
 }
