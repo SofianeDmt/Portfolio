@@ -1,4 +1,22 @@
+.section_title {
+    height: 90vh;
+}
 .title_container {
-    height: 100vh;
-    @apply flex flex-col justify-center items-center;
+    top: 20vh;
+    @apply flex flex-col justify-center items-center text-center relative;
+}
+.title {
+    font-weight: 700;
+    color: #2e3d62;
+    @apply text-5xl lg:text-7xl md:text-6xl uppercase
+}
+.title_and {
+    font-weight: 400;
+    color: #2e3d62;
+    @apply text-lg lg:text-3xl uppercase my-1 lg:my-5
+}
+.sub_title {
+    font-weight: 100;
+    color: #7f8797;
+    @apply text-sm mt-8;
 }
