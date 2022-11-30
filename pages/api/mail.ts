@@ -1,4 +1,4 @@
-export default function (req: any, res: any) {
+export default function (req: any, res: Response) {
   let nodemailer = require("nodemailer");
 
   let emailContent = `<!doctype html>
@@ -400,7 +400,9 @@ hr {
   };
   transporter.sendMail(mailData, function (err: any, info: any) {
     if (err) console.log(err);
-    else console.log(info);
+    else {
+      console.log(info);
+      return res.status;
+    }
   });
-  res.status(200);
 }

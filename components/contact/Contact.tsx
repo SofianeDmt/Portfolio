@@ -1,39 +1,62 @@
 import TwitterSVG from "@/images/icons8-twitter.svg";
 import MailSVG from "@/images/icons8-mail.svg";
 import LinkedinSVG from "@/images/icons8-linkedin.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log("Sending");
-    let data = {
-      subject,
-      email,
-      message,
-    };
-    fetch("/api/mail", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Response received");
-      if (res.status === 200) {
-        console.log("Response succeeded!");
+    if (email != "" && subject != "" && message != "") {
+      if (regex.test(email)) {
+        let data = {
+          subject,
+          email,
+          message,
+        };
         setSubmitted(true);
-        setSubject("");
-        setEmail("");
+        fetch("/api/mail", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }).then((res) => {});
       }
-    });
+      setError(true);
+    }
+    if (email == "" || subject == "" || message == "") {
+      setError(true);
+    }
   };
+
+  useEffect(() => {
+    if (error) {
+      setTimeout(() => {
+        setError(false);
+      }, 5000);
+    }
+  }, [error]);
+
+  useEffect(() => {
+    if (submitted) {
+      setMessage("");
+      setEmail("");
+      setSubject("");
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+    }
+  }, [submitted]);
+
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -128,6 +151,7 @@ export default function Contact() {
                 Votre adresse e-mail
               </label>
               <input
+                value={email}
                 type="email"
                 id="email"
                 onChange={(e) => {
@@ -146,6 +170,7 @@ export default function Contact() {
                 Le sujet
               </label>
               <input
+                value={subject}
                 type="text"
                 id="subject"
                 onChange={(e) => {
@@ -164,6 +189,7 @@ export default function Contact() {
                 Votre message
               </label>
               <textarea
+                value={message}
                 id="message"
                 rows={6}
                 onChange={(e) => {
@@ -183,6 +209,51 @@ export default function Contact() {
               Envoyez
             </button>
           </form>
+          {submitted ? (
+            <div
+              className="bg-green-100 mt-5 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+              role="alert"
+            >
+              <strong className="font-bold">Envoyé! </strong>
+              <span className="block sm:inline">
+                Votre message a bien etait envoyé. Je ferais de mon mieux pour
+                repondre rapidement.
+              </span>
+              <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <svg
+                  className="fill-current h-6 w-6 text-green-500"
+                  role="button"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <title>Close</title>
+                  <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                </svg>
+              </span>
+            </div>
+          ) : null}
+          {error ? (
+            <div
+              className="bg-red-100 mt-5 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+              role="alert"
+            >
+              <strong className="font-bold">Erreur! </strong>
+              <span className="block sm:inline">
+                Un champ est vide ou mal renseigné.
+              </span>
+              <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <svg
+                  className="fill-current h-6 w-6 text-red-500"
+                  role="button"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <title>Close</title>
+                  <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                </svg>
+              </span>
+            </div>
+          ) : null}
         </div>
       </section>
     </div>
