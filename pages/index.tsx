@@ -33,16 +33,16 @@ export default function Home() {
         <Navbar_Project />
         <Title />
         <Interest />
-        <section className="my-28">
+        <section id="INFO" className="mt-28">
           <About />
         </section>
-        <section className="my-28">
+        <section className="my-10">
           <Skills />
         </section>
-        <section className="my-20">
+        <section className="my-10">
           <Clients />
         </section>
-        <section className="mt-28">
+        <section id="Contact">
           <Contact />
         </section>
       </main>

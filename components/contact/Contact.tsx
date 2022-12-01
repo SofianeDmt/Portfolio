@@ -88,7 +88,8 @@ export default function Contact() {
                 </h2>
                 <p className="leading-relaxed text-base">
                   Je suis enormement actif sur twitter, vous pouvez me contactez
-                  via ce reseau social, je vous repondrez.
+                  ou me suivre via ce reseau social, je vous repondrez
+                  rapidement si besoin.
                 </p>
               </div>
             </div>
@@ -105,8 +106,8 @@ export default function Contact() {
                 </h2>
                 <p className="leading-relaxed text-base">
                   Dans le monde professionel un Linkedin est primordial,
-                  nhesitez pas a elargir mon reseau ou a me contacter par ce
-                  reseaux social.{" "}
+                  {"n'hesitez"} pas a elargir votre reseau (et le mien) ou a me
+                  contacter via ce reseau social.
                 </p>
               </div>
             </div>
@@ -122,8 +123,10 @@ export default function Contact() {
                   Mail
                 </h2>
                 <p className="leading-relaxed text-base">
-                  La methode la plus simple et rapide, cest de menvoyer un
-                  email, jattend le votre avec impatience.
+                  La methode la plus simple et rapide {"c'est"} de {"m'envoyer"}{" "}
+                  un email, {"j'attend"} le votre avec impatience. Vous pouvez
+                  aussi me contactez via le formulaire ci dessous pour plus de
+                  facilité de votre côtès.
                 </p>
               </div>
             </div>
@@ -133,14 +136,15 @@ export default function Contact() {
       <section className="bg-white dark:bg-gray-900 mt-16">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Besoin dun renseignement?
+            Besoin {"d'un"} renseignement supplémentaire?
           </h2>
           <div className="flex mt-6 mb-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-sm">
-            Nhesitez pas a remplir le formulaire si vous avez besoin daide,
-            sinon vous pouvez aussi passer par mes reseaux sociaux
+            {"N'hesitez"} pas a remplir le formulaire si vous avez besoin{" "}
+            {"d'informations"} supplémentaire, sinon vous pouvez aussi passer
+            par mes reseaux sociaux.
           </p>
           <form action="#" className="space-y-8">
             <div>
