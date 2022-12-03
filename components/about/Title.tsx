@@ -7,7 +7,7 @@ export default function Title() {
         <h4 className="text-[14px] text-indigo-500 tracking-widest font-medium uppercase">
           Bienvenue sur mon portfolio
         </h4>
-        <div className={styles.title}>
+        <div className={[styles.title, "dark:text-rockblue"].join(" ")}>
           <h2>
             Developer Web
             <br />
@@ -23,7 +23,7 @@ export default function Title() {
 
         <div className="mt-10">
           <a target="_blank" href="/upload/Sofiane_Demette_CV.pdf">
-            <button className="text-[12px] bg-blue-200 hover:scale-105 text-indigo-500 py-2 px-4 rounded inline-flex items-center">
+            <button className="text-[12px] bg-blue-200 hover:scale-105 dark:bg-[#232a2e] text-indigo-500 py-2 px-4 rounded inline-flex items-center">
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"

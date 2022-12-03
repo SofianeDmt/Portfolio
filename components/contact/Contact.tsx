@@ -30,8 +30,9 @@ export default function Contact() {
           },
           body: JSON.stringify(data),
         }).then((res) => {});
+      } else if (!regex.test(email)) {
+        setError(true);
       }
-      setError(true);
     }
     if (email == "" || subject == "" || message == "") {
       setError(true);
@@ -67,7 +68,7 @@ export default function Contact() {
             </h2>
           </div>
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            <h1 className="sm:text-3xl text-2xl font-bold dark:text-white title-font text-gray-900 mb-4">
               Vous pouvez me contactez via
             </h1>
             <div className="flex mt-6 justify-center">
@@ -83,7 +84,7 @@ export default function Contact() {
                 <TwitterSVG />
               </a>
               <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 dark:text-white">
                   Twitter
                 </h2>
                 <p className="leading-relaxed text-base">
@@ -101,7 +102,7 @@ export default function Contact() {
                 <LinkedinSVG height="40px" />
               </a>
               <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 dark:text-white">
                   Linkedin
                 </h2>
                 <p className="leading-relaxed text-base">
@@ -119,7 +120,7 @@ export default function Contact() {
                 <MailSVG height="40px" />
               </a>
               <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 dark:text-white">
                   Mail
                 </h2>
                 <p className="leading-relaxed text-base">

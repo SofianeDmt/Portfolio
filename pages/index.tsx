@@ -9,6 +9,7 @@ import Title from "../components/about/Title";
 import Footer_section from "../components/footer/Footer";
 import Interest from "@/components/about/Interest";
 import { useEffect, useState } from "react";
+import MytsParticles from "@/components/tsparticles/TSparticles";
 
 export default function Home() {
   const [scroll, setScroll] = useState(false);
@@ -31,8 +32,13 @@ export default function Home() {
 
       <main>
         <Navbar_Project />
-        <Title />
-        <Interest />
+        <div>
+          <MytsParticles />
+          <Title />
+        </div>
+        <section className="dark:bg-mirage py-10">
+          <Interest />
+        </section>
         <section id="INFO" className="mt-28">
           <About />
         </section>

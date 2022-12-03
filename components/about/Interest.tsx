@@ -10,13 +10,13 @@ export default function Interest() {
         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font">
           MES INTÊRETS
         </h2>
-        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+        <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 dark:text-white">
           Ce qui {"m'interesse"}
         </h1>
         <div className="flex mt-6 mb-6 justify-center">
           <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
         </div>
-        <p>
+        <p className="dark:text-[#7f8797]">
           Dans le monde du web il est important {"d'avoir"} de {"l'attrait"}{" "}
           pour beaucoup de choses pour pouvoir elargir ses compétences
         </p>
@@ -26,7 +26,9 @@ export default function Interest() {
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <DesignSVG />
 
-            <h5 className="text-lg text-gray-300 mt-5">UI / UX</h5>
+            <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
+              UI / UX
+            </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
@@ -34,7 +36,9 @@ export default function Interest() {
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <DevSVG />
 
-            <h5 className="text-lg text-gray-300 mt-5">Dev / Logic</h5>
+            <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
+              Dev / Logic
+            </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
@@ -42,7 +46,9 @@ export default function Interest() {
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <CMSSVG />
 
-            <h5 className="text-lg text-gray-300 mt-5">CMS</h5>
+            <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
+              CMS
+            </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
@@ -50,7 +56,9 @@ export default function Interest() {
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <BackendSVG />
 
-            <h5 className="text-lg text-gray-300 mt-5">Data / Server</h5>
+            <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
+              Data / Server
+            </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
