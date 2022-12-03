@@ -8,12 +8,12 @@
 .title {
     font-weight: 700;
     color: #2e3d62;
-    @apply text-5xl lg:text-7xl md:text-6xl uppercase
+    @apply text-5xl lg:text-7xl md:text-6xl uppercase dark:text-rockblue
 }
 .title_and {
     font-weight: 400;
     color: #2e3d62;
-    @apply text-lg lg:text-3xl uppercase my-1 lg:my-5
+    @apply text-lg lg:text-3xl uppercase my-1 lg:my-5 text-indigo-500
 }
 .sub_title {
     font-weight: 100;

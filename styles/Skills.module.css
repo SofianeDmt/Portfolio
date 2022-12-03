@@ -1,0 +1,3 @@
+.openskills {
+    @apply flex flex-wrap justify-around items-center lg:flex-row md:flex-row flex-col w-full -m-4 mx-auto
+}

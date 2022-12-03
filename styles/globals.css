@@ -1,10 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     .darkM {
-        background: black;
+        background: #111517;
     }
     .light {
         background: white;
@@ -13,6 +14,16 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     @apply light dark:darkM dark:text-white font-light
+}
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -100; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
