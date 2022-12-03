@@ -10,7 +10,14 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        tide: "#bdb7af",
+        rockblue: "#a2b9d4",
+        back: "#111517",
+        mirage: "#101827",
+      },
+    },
   },
   variants: {
     extend: {
