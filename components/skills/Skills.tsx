@@ -14,12 +14,13 @@ import WP from "@/images/wordpress.svg";
 import MySQL from "@/images/mysql.svg";
 import MongoDB from "@/images/mongodb.svg";
 import Presta from "@/images/prestashop.svg";
+import Docker from "@/images/dockersvg.svg";
 import Stars1 from "@/images/stars.svg";
 import Stars0 from "@/images/start_hidden.svg";
 import { useState } from "react";
 import styles from "@/styles/Skills.module.css";
 export default function Skills() {
-  const [openSkills, setOpenSkills] = useState(false);
+  const [openSkills, setOpenSkills] = useState<boolean>();
 
   return (
     <section className="text-gray-600 body-font">
@@ -36,8 +37,10 @@ export default function Skills() {
           </div>
           <p>
             Je suis un touche a tout et {"j'essaie"} de me diversifié un maximum
-            et sur differents postes possible. {"J'aime"} apprendre de nouveaux
-            langages et frameworks, cela ne me fait pas peur.
+            et sur differents postes possible.
+            <br />
+            {"J'aime"} apprendre de nouveaux langages et frameworks pour être le
+            plus polyvalent possible.
           </p>
         </div>
         <div className="flex flex-wrap justify-around items-center lg:flex-row md:flex-row flex-col w-full -m-4 mx-auto">
@@ -114,6 +117,12 @@ export default function Skills() {
               Logo={MongoDB}
               size="130px"
               Stars={Stars0}
+            />
+            <Skills_card
+              Title="Docker"
+              Logo={Docker}
+              size="130px"
+              Stars={Stars1}
             />
           </div>
         ) : null}

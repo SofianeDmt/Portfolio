@@ -17,32 +17,32 @@ export default function Interest() {
           <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
         </div>
         <p className="dark:text-[#7f8797]">
-          Dans le monde du web il est important {"d'avoir"} de {"l'attrait"}{" "}
-          pour beaucoup de choses pour pouvoir elargir ses compétences
+          Dans le monde du web, il est important {"d'avoir"} de {"l'attrait"}{" "}
+          pour beaucoup de choses pour pouvoir élargir ses compétences.
         </p>
       </div>
       <div className="flex flex-col lg:flex-row flex-wrap justify-around items-center">
-        <article className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 w-fit mx-3 mt-5 shadow-xl transition hover:shadow-sm hover:scale-105">
+        <article className="rounded-xl hover:border-gray-300 p-0.5 w-fit mx-3 mt-5 hover:shadow-xl transition hover:shadow-sm hover:scale-105">
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <DesignSVG />
 
             <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
-              UI / UX
+              UI / UX Design
             </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
-        <article className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 w-fit mx-3 mt-5 shadow-xl transition hover:shadow-sm hover:scale-105">
+        <article className="rounded-xl hover:border-gray-300 p-0.5 w-fit mx-3 mt-5 hover:shadow-xl transition hover:shadow-sm hover:scale-105">
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <DevSVG />
 
             <h5 className="text-lg text-gray-300 mt-5 dark:text-black font-medium">
-              Dev / Logic
+              Developpement Web
             </h5>
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
-        <article className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 w-fit mx-3 mt-5 shadow-xl transition hover:shadow-sm hover:scale-105">
+        <article className="rounded-xl hover:border-gray-300 p-0.5 w-fit mx-3 mt-5 hover:shadow-xl transition hover:shadow-sm hover:scale-105">
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <CMSSVG />
 
@@ -52,7 +52,7 @@ export default function Interest() {
             <div className="mt-4 flex flex-wrap gap-1"></div>
           </div>
         </article>
-        <article className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 w-fit mx-3 mt-5 shadow-xl transition hover:shadow-sm hover:scale-105">
+        <article className="rounded-xl hover:border-gray-300 p-0.5 w-fit mx-3 mt-5 hover:shadow-xl transition hover:shadow-sm hover:scale-105">
           <div className="rounded-[10px] bg-white p-4 sm:p-6 flex flex-col justify-center items-center">
             <BackendSVG />
 

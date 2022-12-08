@@ -3,17 +3,17 @@
 }
 .title_container {
     top: 20vh;
-    @apply flex flex-col justify-center items-center text-center relative;
+    @apply flex flex-col justify-center items-center text-center relative lg:top-[15vh];
 }
 .title {
     font-weight: 700;
     color: #2e3d62;
-    @apply text-5xl lg:text-7xl md:text-6xl uppercase dark:text-rockblue
+    @apply text-5xl lg:text-7xl md:text-6xl uppercase dark:text-rockblue my-5
 }
 .title_and {
     font-weight: 400;
     color: #2e3d62;
-    @apply text-lg lg:text-3xl uppercase my-1 lg:my-5 text-indigo-500
+    @apply text-3xl lg:text-4xl uppercase my-1 lg:my-5 text-indigo-500 lg:my-14 my-10
 }
 .sub_title {
     font-weight: 100;

@@ -25,11 +25,23 @@ export default function About() {
           <div className="flex mt-6 mb-6 justify-center">
             <div className="w-56 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
+          <br />
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">
-            Je {"m'appel"} Sofiane Demette jai 25 ans, je sort {"d'une"}{" "}
-            formation M2I qui a durée 8 mois. Nous avons appris les bases du
-            developpement web avec des langages assez simple mais aussi de plus
-            gros langages accompagnés de frameworks.
+            Je {"m'appelle"} Sofiane, {"j'ai"} 25 ans et je suis détenteur d’un
+            titre professionnel Développeur Web et Développeur Web Mobile obtenu
+            en 2022 avec la société de formation M2I basée à Villeneuve d’Ascq.
+            <br />
+            <br />
+            Après celle-ci je suis partie en stage dans l’entreprise Andromed
+            qui par la suite m’a proposer de travailler avec moi pour un projet
+            en interne, tout cela m’a permet d’élargir mes compétences dans le
+            domaine du web.
+            <br />
+            <br />
+            {"J'aime"} toucher à tout et être autonome sur les projets que{" "}
+            {"l'on"} me confie, cependant {"j'apporte"} une affection
+            supplémentaire au développement dit front-end, notamment avec le
+            framework NextJS.
           </p>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">

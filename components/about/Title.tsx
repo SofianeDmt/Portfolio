@@ -4,18 +4,18 @@ export default function Title() {
   return (
     <section className={styles.section_title}>
       <div className={styles.title_container}>
-        <h4 className="text-[14px] text-indigo-500 tracking-widest font-medium uppercase">
+        <h4 className="text-[12px] text-indigo-500 tracking-widest font-medium uppercase">
           Bienvenue sur mon portfolio
         </h4>
         <div className={[styles.title, "dark:text-rockblue"].join(" ")}>
           <h2>
-            Developer Web
+            DÉVELOPPEUR WEB
             <br />
             <p className={styles.title_and}>&</p>Designer
           </h2>
         </div>
         <div className={styles.sub_title}>
-          <p>
+          <p className="font-medium">
             Retrouvez ma présentation, mes compétences, mes passions
             <br /> ainsi que mon CV
           </p>

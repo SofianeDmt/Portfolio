@@ -69,7 +69,7 @@ export default function Contact() {
           </div>
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-bold dark:text-white title-font text-gray-900 mb-4">
-              Vous pouvez me contactez via
+              Vous pouvez me contacter via
             </h1>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -88,9 +88,9 @@ export default function Contact() {
                   Twitter
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Je suis enormement actif sur twitter, vous pouvez me contactez
-                  ou me suivre via ce reseau social, je vous repondrez
-                  rapidement si besoin.
+                  Je suis énormément actif sur Twitter, vous pouvez me contacter
+                  ou me suivre via ce réseau social, je vous répondrez
+                  rapidement.
                 </p>
               </div>
             </div>
@@ -106,9 +106,9 @@ export default function Contact() {
                   Linkedin
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Dans le monde professionel un Linkedin est primordial,
-                  {"n'hesitez"} pas a elargir votre reseau (et le mien) ou a me
-                  contacter via ce reseau social.
+                  Dans le monde professionnel, un LinkedIn est primordial,{" "}
+                  {"n'hésitez"} pas à élargir votre réseau (et le mien) ou à me
+                  contacter via ce réseau social.
                 </p>
               </div>
             </div>
@@ -124,10 +124,10 @@ export default function Contact() {
                   Mail
                 </h2>
                 <p className="leading-relaxed text-base">
-                  La methode la plus simple et rapide {"c'est"} de {"m'envoyer"}{" "}
-                  un email, {"j'attend"} le votre avec impatience. Vous pouvez
-                  aussi me contactez via le formulaire ci dessous pour plus de
-                  facilité de votre côtès.
+                  La méthode la plus simple et rapide, {"c'est"} de{" "}
+                  {"m'envoyer"} un email, {"j'attends"} le vôtre avec
+                  impatience. Vous pouvez aussi me contacter via le formulaire
+                  ci-dessous pour plus de facilité de votre côté.
                 </p>
               </div>
             </div>
@@ -137,15 +137,15 @@ export default function Contact() {
       <section className="bg-white dark:bg-gray-900 mt-16">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Besoin {"d'un"} renseignement supplémentaire?
+            Besoin {"d'un"} renseignement supplémentaire ?
           </h2>
           <div className="flex mt-6 mb-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-sm">
-            {"N'hesitez"} pas a remplir le formulaire si vous avez besoin{" "}
-            {"d'informations"} supplémentaire, sinon vous pouvez aussi passer
-            par mes reseaux sociaux.
+            {"N'hésitez"} pas à remplir le formulaire si vous avez besoin{" "}
+            {"d'informations"} supplémentaires, sinon vous pouvez aussi passer
+            par mes réseaux sociaux.
           </p>
           <form action="#" className="space-y-8">
             <div>

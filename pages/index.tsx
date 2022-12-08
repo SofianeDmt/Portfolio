@@ -10,6 +10,7 @@ import Footer_section from "../components/footer/Footer";
 import Interest from "@/components/about/Interest";
 import { useEffect, useState } from "react";
 import MytsParticles from "@/components/tsparticles/TSparticles";
+import MytsParticles2 from "@/components/tsparticles/TSparticles2";
 
 export default function Home() {
   const [scroll, setScroll] = useState(false);
@@ -39,7 +40,8 @@ export default function Home() {
         <section className="dark:bg-mirage py-10">
           <Interest />
         </section>
-        <section id="INFO" className="mt-28">
+        <section id="INFO" className="mt-28 relative">
+          <MytsParticles2 />
           <About />
         </section>
         <section className="my-10">
