@@ -20,6 +20,7 @@ export const MytsParticles2 = () => {
   );
   return (
     <Particles
+      className="hidden md:block lg:block"
       id="tsparticles2"
       init={particlesInit}
       loaded={particlesLoaded}
