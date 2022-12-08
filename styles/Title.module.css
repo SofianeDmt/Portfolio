@@ -2,8 +2,8 @@
     height: 90vh;
 }
 .title_container {
-    top: 20vh;
-    @apply flex flex-col justify-center items-center text-center relative lg:top-[15vh];
+    top: 15vh;
+    @apply flex flex-col justify-center items-center text-center relative;
 }
 .title {
     font-weight: 700;
