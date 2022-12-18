@@ -48,6 +48,7 @@ export default function Navbar_Project() {
             Accueil
           </Navbar.Link>
           <Navbar.Link href="#INFO">A propos</Navbar.Link>
+          <Navbar.Link href="#PROJET">Mes projets</Navbar.Link>
           <Navbar.Link href="#Contact">Contact</Navbar.Link>
           <Navbar.Link>
             <button onClick={() => HandleDarkMode()}>
