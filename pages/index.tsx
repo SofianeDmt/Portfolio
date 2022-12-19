@@ -83,6 +83,19 @@ export default function Home() {
             content="Création d'un site complet de gestion d'ateliers et de sessions ou les membres du centre peuvent se positionner pour y participer. Gestion de rôle, CRUD, statistique des centres, des sessions, des ateliers, agenda événements et cloud fichiers."
           />
         </section>
+        <section className="md:py-10">
+          <Project
+            enterpriseLink="https://www.sofianedmt.com/"
+            twitter="https://twitter.com/SofianeDmt"
+            linkedin="https://www.linkedin.com/in/sofianedmt/"
+            link="https://sofianedmt.github.io/"
+            title="Site Web"
+            enterprise="Sofiane Demette"
+            status="Terminé"
+            image="/images/firstportfolio.png"
+            content="Création de mon premier Portfolio / CV pendant mes études et heberger sur github pour la facilité lors de mes début. Il regoupe les différents projets que j'ai pu réalisé lors de mon cursus d'apprentissage."
+          />
+        </section>
         <section id="Contact">
           <Contact />
         </section>
