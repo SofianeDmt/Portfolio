@@ -1,5 +1,7 @@
 import { Navbar } from "flowbite-react";
 import { useEffect, useState } from "react";
+import LogoSVG from "@/images//logolight.svg";
+import LogoSVGlight from "@/images//logodark.svg";
 
 export default function Navbar_Project() {
   const [DarkMode, setDarkMode] = useState<Boolean>(false);
@@ -29,18 +31,15 @@ export default function Navbar_Project() {
     }
   }
 
-  let logo = DarkMode ? "/images/logodark.gif" : "/images/logo.gif";
-
   return (
     <div className="dark:bg-back">
       <Navbar fluid={true} rounded={true} className="dark:bg-[#111517]">
         <Navbar.Brand href="/">
-          <img
-            id="logo"
-            src={logo}
-            className="mr-3 relative h-20"
-            alt="Logo Sofiane Dmt"
-          />
+          {DarkMode ? (
+            <LogoSVGlight className="-mt-1" />
+          ) : (
+            <LogoSVG className="-mt-1" />
+          )}
         </Navbar.Brand>
         <Navbar.Toggle className="dark:bg-back" />
         <Navbar.Collapse className="text-center text-sm lg:text-md dark:text-tide dark:bg-back">

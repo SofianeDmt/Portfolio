@@ -29,31 +29,6 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Head>
-        <title>SofianeDmt - Welcome to my Portfolio</title>
-        <meta
-          name="title"
-          content="Sofiane Dmt - Bienvenue sur mon Portfolio "
-        />
-        <meta
-          name="description"
-          content="Sofiane Dmt. Bienvenue sur mon site personnel, sur celui-ci, retrouvez toutes les informations concernant Sofiane Dmt."
-        />
-        <meta
-          name="keywords"
-          content="SofianeDmt, Sofiane Demette, Sofiane Dmt, Sofiane Développeur, Développeur NextJS, Développeur ReactJS, Développeur Web, Web Developper, M2I, Lille, Designer, Sofiane Designer, Web Designer, HTML, CSS, SCSS, Symfony, PHP, Jeune Développeur Web, NextJS, ReactJS, NodeJS, Développeur Valenciennes, Développeur Lille, Front-End, Développeur web Valenciennes"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=yes"
-        />
-        <meta name="language" content="French" />
-        <meta name="revisit-after" content="1 day" />
-        <meta name="author" content="Sofiane Demette" />
-      </Head>
-
       <main>
         <Navbar_Project />
         <div>
