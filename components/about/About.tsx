@@ -34,7 +34,7 @@ export default function About() {
             <br />
             Après celle-ci je suis partie en stage dans l’entreprise Andromed
             qui par la suite m’a proposer de travailler avec moi pour un projet
-            en interne, tout cela m’a permet d’élargir mes compétences dans le
+            en interne, tout cela m’a permis d’élargir mes compétences dans le
             domaine du web.
             <br />
             <br />

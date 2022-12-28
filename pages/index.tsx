@@ -93,7 +93,7 @@ export default function Home() {
             enterprise="Sofiane Demette"
             status="Terminé"
             image="/images/firstportfolio.png"
-            content="Création de mon premier Portfolio / CV pendant mes études et heberger sur github pour la facilité lors de mes début. Il regoupe les différents projets que j'ai pu réalisé lors de mon cursus d'apprentissage."
+            content="Création de mon premier Portfolio / CV pendant mes études et héberger sur github pour la facilité lors de mes débuts. Il regroupe les différents projets que j'ai pu réaliser lors de mon cursus d'apprentissage."
           />
         </section>
         <section id="Contact">
