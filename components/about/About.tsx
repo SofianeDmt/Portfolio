@@ -32,9 +32,9 @@ export default function About() {
             en 2022 avec la société de formation M2I basée à Villeneuve d’Ascq.
             <br />
             <br />
-            Après celle-ci je suis partie en stage dans l’entreprise Andromed
-            qui par la suite m’a proposer de travailler avec moi pour un projet
-            en interne, tout cela m’a permis d’élargir mes compétences dans le
+            Après celle-ci, je suis allé en stage dans l’entreprise Andromed qui
+            par la suite, m’a proposé de travailler avec moi pour un projet en
+            interne, tout cela m’a permis d’élargir mes compétences dans le
             domaine du web.
             <br />
             <br />

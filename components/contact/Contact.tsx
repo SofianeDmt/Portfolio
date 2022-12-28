@@ -64,7 +64,7 @@ export default function Contact() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-              ME CONTACTEZ
+              ME CONTACTER
             </h2>
           </div>
           <div className="text-center mb-20">
@@ -89,7 +89,7 @@ export default function Contact() {
                 </h2>
                 <p className="leading-relaxed text-base">
                   Je suis énormément actif sur Twitter, vous pouvez me contacter
-                  ou me suivre via ce réseau social, je vous répondrez
+                  ou me suivre via ce réseau social, je vous répondrais
                   rapidement.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function Contact() {
               }}
               className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
-              Envoyez
+              Envoyer
             </button>
           </form>
           {submitted ? (
@@ -221,8 +221,8 @@ export default function Contact() {
             >
               <strong className="font-bold">Envoyé! </strong>
               <span className="block sm:inline">
-                Votre message a bien etait envoyé. Je ferais de mon mieux pour
-                repondre rapidement.
+                Votre message a bien été envoyé. Je ferais de mon mieux pour
+                répondre rapidement.
               </span>
               <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
                 <svg

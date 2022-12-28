@@ -30,14 +30,14 @@ export default function Skills() {
             MES COMPÉTENCES
           </h2>
           <h2 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 dark:text-white">
-            Touche a tout
+            Touche à tout
           </h2>
           <div className="flex mt-6 mb-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
           <p>
-            Je suis un touche a tout et {"j'essaie"} de me diversifié un maximum
-            et sur differents postes possible.
+            Je suis un &quot; touche à tout &quot; et {"j'essaie"} de me
+            diversifer un maximum et sur differents postes possibles.
             <br />
             {"J'aime"} apprendre de nouveaux langages et frameworks pour être le
             plus polyvalent possible.

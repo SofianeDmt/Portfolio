@@ -77,10 +77,10 @@ export default function Home() {
             facebook="https://www.facebook.com/fedepayspicards/"
             linkedin="https://www.linkedin.com/company/centres-sociaux-connect%C3%A9s-des-pays-picards/"
             title="Site Web"
-            enterprise="Centre Sociaux Connécté Picardie"
+            enterprise="Centres Sociaux Connéctés Picardie"
             status="En cours"
             image="/images/csconnectsite.png"
-            content="Création d'un site complet de gestion d'ateliers et de sessions ou les membres du centre peuvent se positionner pour y participer. Gestion de rôle, CRUD, statistique des centres, des sessions, des ateliers, agenda événements et cloud fichiers."
+            content="Création d'un site complet de gestion d'ateliers et de sessions où les membres du centre peuvent se positionner pour y participer. Gestion de rôle, CRUD, statistique des centres, des sessions, des ateliers, agenda événements et cloud fichiers."
           />
         </section>
         <section className="md:py-10">

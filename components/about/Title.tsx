@@ -32,7 +32,7 @@ export default function Title() {
               >
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
               </svg>
-              <span>Tu peux aussi visualisé ou télécharger mon CV ici</span>
+              <span>Tu peux aussi visualiser ou télécharger mon CV ici</span>
             </button>
           </a>
         </div>

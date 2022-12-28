@@ -9,7 +9,7 @@ export default function Footer_section() {
         >
           Sofiane Demette
         </a>
-        . Tout droits réservé.
+        . Tous droits réservés.
       </p>
       <div className="flex justify-center items-center space-x-1">
         <a
